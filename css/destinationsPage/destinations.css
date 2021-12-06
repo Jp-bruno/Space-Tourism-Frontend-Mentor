@@ -1,0 +1,121 @@
+body {
+    background-image: url('../../assets/destination/background-destination-desktop.jpg');
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 150px;
+}
+
+#firstPanel {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+#firstPanel h2 {
+    font-family: var(--barlow);
+    margin-bottom: 7vh;
+    font-size: 28px;
+    font-weight: 400;   
+    letter-spacing: 4.724999904632568px;
+}
+
+#firstPanel h2 span{
+    padding-right: 20px;
+    color: rgba(255,255,255, 0.25)
+}
+
+#firstPanel img {
+    width: 80%;
+}
+
+#secondPanel {
+    padding: 5vh 100px 0;
+}
+
+#planetsNav {
+    margin: 5vh 0 5vh;
+}
+
+.planetListItem {
+    padding: 15px 0;
+    margin: 0 20px;
+    color:rgba(255,255,255, 0.55);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+    cursor: pointer;
+}
+
+.planetListItem:hover {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5)
+}
+
+.planetListItem:first-of-type {
+    margin-left: 0;
+}
+
+.planetListItem.active {
+    border-bottom: solid 2px white;
+    cursor: default;
+    color: white;
+}
+
+#planetsList {
+    font-family: var(--barlow);
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+}
+
+#planetNameHeader {
+    font-family: var(--bellefair);
+    font-size: 100px;
+    font-weight: 400;
+}
+
+#description {
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(208, 214, 249, 1);
+}
+
+hr {
+    background-color: rgba(255,255,255, 0.25);
+    margin: 7vh 0 3vh;
+    height: 1px;
+    border: none;
+}
+table {
+    width: 100%;
+}
+
+th {
+    font-family: var(--barlow);
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 2.3px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+tr {
+    border: solid 10px white;
+}
+
+td {
+    font-family: var(--bellefair);
+    font-size: 28px;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+

@@ -1,0 +1,112 @@
+body {
+    background-image: url('../../assets/technology/background-technology-desktop.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 200px;
+}
+
+#firstPanel {
+    display: grid;
+    grid-template-rows: 30% auto;
+    padding-left: 150px;
+}
+
+#firstPanel h2 {
+    font-family: var(--barlow);
+    font-size: 28px;
+    font-weight: 400;   
+    padding-bottom: 40vh;
+    letter-spacing: 4.7px;
+}
+
+#firstPanel h2 span{
+    padding-right: 20px;
+    color: rgba(255,255,255, 0.25)
+}
+
+#infoWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#infoWrapper nav {
+    
+    margin-right: 60px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(3 * 75px + 75px);
+}
+
+#textContent h3 {
+    font-family: var(--barlow);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+}
+
+#textContent h1 {
+    font-family: var(--bellefair);
+    font-size: 56px;
+    font-weight: 400;
+    width: calc(100% + 50px);
+    margin: 15px 0 20px 0;
+}
+
+#textContent p {
+    font-family: var(--barlow);
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255,255,255, 0.55);
+    padding-right: 30px;
+}
+
+#secondPanel {
+    display: grid;
+    place-items: end;
+}
+
+img:not(#logo) {
+    margin: 0;
+    width: 40vw;
+}
+
+.listItem {
+    width: 75px;
+    height: 75px;
+    background: rgba(255,255,255, 0);
+    border-radius: 100px; 
+    color: white;
+    border: 1px solid #ffffff21;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.listItem.active {
+    background: rgba(255,255,255, 1);
+    color: black;
+    cursor: default;
+}
+
+.listItem:hover {
+    background: rgba(255,255,255, 1);
+    color: black;
+}
+
+.listItem a {
+    font-family: var(--bellefair);
+    font-size: 32px;
+    width: 100%;
+    border-radius: 100px; 
+    height: 100%;    
+    display: grid;
+    place-items: center;
+}

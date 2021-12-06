@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="../css/globalStyle.css">
+    <link rel="stylesheet" href="../css/destinationsPage/destinations.css">
+</head>
+
+<body>
+    <header id='topBar'>
+        <img id='logo' src='../assets/logo.svg'>
+
+        <div id='line'></div>
+
+        <nav id='topNav'>
+            <ol id='topNavList'>
+                <li class='topNavListItem'><span>00</span><a href="../index.html">HOME</a></li>
+                <li class='topNavListItem active'><span>01</span><a href="">DESTINATION</a></li>
+                <li class='topNavListItem'><span>02</span><a href="../crew/crew-commander.html">CREW</a></li>
+                <li class='topNavListItem'><span>03</span><a href="../technology/technology-capsule.html">TECHNOLOGY</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <main>
+        <section id='firstPanel'>
+            <h2><span>01</span>PICK YOUR DESTINATION</h2>
+            <img id='planetPic' src='../assets/destination/image-europa.png'>
+        </section>
+
+        <section id='secondPanel'>
+            <nav id='planetsNav'>
+                <ul id='planetsList'>
+                    <li class='planetListItem'><a href="./destination-moon.html">MOON</a></li>
+                    <li class='planetListItem'><a href="./destination-mars.html">MARS</a></li>
+                    <li class='planetListItem active'><a href="">EUROPA</a></li>
+                    <li class='planetListItem'><a href="./destination-titan.html">TITAN</a></li>
+                </ul>
+            </nav>
+
+            <h1 id='planetNameHeader'>EUROPA</h1>
+
+            <p id='description'>
+                The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy
+                surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug
+                wintery cabin.
+            </p>
+
+            <hr>
+
+            <table id='infoTable'>
+                <thead>
+                    <th>AVG. DISTANCE</th>
+                    <th>EST. TRAVEL TIME</th>
+                </thead>
+
+                <tr>
+                    <td id='distance'>628 MIL. KM</td>
+                    <td id='travelTime'>3 YEARS</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+</body>
+
+</html>

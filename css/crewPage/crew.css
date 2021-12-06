@@ -1,0 +1,99 @@
+body {
+    background-image: url('../../assets/crew/background-crew-desktop.jpg');
+    background-size: cover ;
+    background-attachment: fixed;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    height: calc(100vh - 134px);
+}
+
+#firstPanel {
+    padding: 100px 0 100px 150px;
+}
+
+#firstPanel h2 {
+    font-family: var(--barlow);
+    margin-bottom: 15vh;
+    font-size: 28px;
+    font-weight: 400;   
+    letter-spacing: 4.7px;
+}
+
+#firstPanel h2 span{
+    padding-right: 20px;
+    color: rgba(255,255,255, 0.25);
+}
+
+#aboutCrew {
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutCrew h2 {
+    font-family:  var(--bellefair);
+    font-size: 32px;
+    font-weight: 400;
+    color: rgba(255,255,255, 0.65);
+    margin: 0 0 10px 0;
+}
+
+#aboutCrew h1 {
+    font-family: var(--bellefair);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin: 0 0 15px 0;
+    width: calc(100% + 240px);
+}
+
+#aboutCrew p {
+    font-family: var(--barlow);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgba(255,255,255, 0.65);
+
+}
+
+#switch {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    margin-top: 15vh;
+}
+
+.button {
+    width: 13px;
+    height: 13px;
+    background:rgba(255,255,255, 0.25);
+    cursor: pointer;
+    border-radius: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background:rgba(255,255,255, 0.75);
+}
+
+.button.active {
+    background:rgba(255,255,255, 1);
+    cursor: default;
+}
+
+#secondPanel {
+    display: grid;
+    place-items: center;
+}
+
+img:not(#logo) {
+    width: calc(100vw / 100vh);
+    margin: 0 70px;
+    place-self: end center;
+}
+
