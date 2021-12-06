@@ -1,6 +1,6 @@
 ## Welcome
 
-This project was a [FrontEnd Mentor challenge](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). I could do it in ReactJS, it would be easier, but i needed to prove to myself that I could do it with just HTML and CSS to challenge my skills. 
+This project was a [FrontEnd Mentor challenge](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). I could do it in ReactJS, it would be easier, but I needed to prove to myself that I could do it with just HTML and CSS to challenge my skills. 
 
 ## Built with
 
@@ -14,5 +14,5 @@ This project was a [FrontEnd Mentor challenge](https://www.frontendmentor.io/cha
 
 The code in this repo results in this page:
 
-<!-- ![alt text](https://github.com/Jp-bruno/FrontendMentorChallenge1/blob/116f31f0f0d19b99f921fbffaef7ebc53d1acb52/print.PNG) -->
+![alt text](https://github.com/Jp-bruno/Space-Tourism-Frontend-Mentor/blob/f1e86494df1bd22db65b8148b67ce5f373f70242/snap.PNG)
 
