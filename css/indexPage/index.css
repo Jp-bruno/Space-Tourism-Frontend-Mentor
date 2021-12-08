@@ -87,7 +87,7 @@ main {
     transform: translate(-100%, -100%) scale(1.5);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     body {
         height: auto;
         background-image: url('../../assets/home/background-home-tablet.jpg');
