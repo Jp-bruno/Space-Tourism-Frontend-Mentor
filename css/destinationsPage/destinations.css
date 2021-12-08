@@ -15,7 +15,7 @@ main {
     grid-template-rows: auto auto;
 }
 
-#firstPanel h2 {
+#pageTitle {
     font-family: var(--barlow);
     margin-bottom: 7vh;
     font-size: 28px;
@@ -23,9 +23,10 @@ main {
     letter-spacing: 4.7px;
 }
 
-#firstPanel h2 span{
+#pageTitle span{
     padding-right: 20px;
-    color: rgba(255,255,255, 0.25)
+    color: rgba(255,255,255, 0.25);       
+    font-weight: bold;
 }
 
 #firstPanel img {

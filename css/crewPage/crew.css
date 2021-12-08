@@ -17,7 +17,8 @@ main {
 #pageTitle {
     font-family: var(--barlow);
     margin-bottom: 15vh;
-    font-weight: 300;   
+    font-weight: 400;   
+    font-size: 28px;
     letter-spacing: 4.7px;
 }
 
@@ -37,6 +38,19 @@ main {
     font-weight: 400;
     color: rgba(255,255,255, 0.65);
     margin: 0 0 10px 0;
+}
+
+#firstPanel + h2 {
+    font-family: var(--barlow);
+    margin-bottom: 7vh;
+    font-size: 28px;
+    font-weight: bold;   
+}
+
+#firstPanel h2 span{
+    padding-right: 20px;
+    color: rgba(255,255,255, 0.25);       
+    font-weight: 600;
 }
 
 #aboutCrew h1 {
@@ -116,15 +130,12 @@ img:not(#logo) {
     }
     
     #pageTitle {
-        font-family: var(--barlow);
-        font-size: 24px;
-        font-weight: 400;  
-        margin-left: -50px; 
-        margin-bottom: 50px; 
+        margin: 20px 0 60px -50px;
+        font-size: 20px;
     }
     
     #firstPanel h2 span{
-        font-weight: 800;
+        font-weight: 700;
     }
 
     #aboutCrew {
