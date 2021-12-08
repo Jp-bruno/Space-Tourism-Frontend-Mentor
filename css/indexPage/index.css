@@ -1,4 +1,3 @@
-
 body {
     width: 100vw;
     height: calc(100vh - 40px);
@@ -12,6 +11,7 @@ main {
     grid-template-columns: 1fr 1fr;
     place-items: center;
     color: white;
+    max-width: 100vw;
     height: calc(100% - 40px);
 }
 
@@ -51,16 +51,6 @@ main {
     text-align: left;
 }
 
-#exploreButtonWrapper {
-    transform: translateY(50px);
-}
-
-@keyframes meh {
-    0% {
-
-    }
-}
-
 #exploreButton {
     border-radius: 500px;
     height: 274px;
@@ -70,6 +60,7 @@ main {
     font-size: 32px;
     font-weight: 400;
     line-height: 37px;
+    transform: translateY(50px);
     letter-spacing: 2px;
     cursor: pointer;
     color: rgba(11, 13, 23, 1);
@@ -94,6 +85,37 @@ main {
 
 #exploreButton:hover::after {
     transform: translate(-100%, -100%) scale(1.5);
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        background-image: url('../../assets/home/background-home-tablet.jpg');
+    }
+
+    main {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        padding: 150px 0 0 0;
+    }
+
+    h5, p, h1 {
+        text-align: center !important;
+    }
+
+    #indexText {
+        color: #D0D6F9;
+    }
+
+    #indexText h5 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    
+    #exploreButton {
+        margin: 100px 0 200px;
+    }
+    
 }
 
 

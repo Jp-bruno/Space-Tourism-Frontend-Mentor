@@ -14,15 +14,14 @@ main {
     padding: 100px 0 100px 150px;
 }
 
-#firstPanel h2 {
+#pageTitle {
     font-family: var(--barlow);
     margin-bottom: 15vh;
-    font-size: 28px;
-    font-weight: 400;   
+    font-weight: 300;   
     letter-spacing: 4.7px;
 }
 
-#firstPanel h2 span{
+#pageTitle span{
     padding-right: 20px;
     color: rgba(255,255,255, 0.25);
 }
@@ -45,11 +44,9 @@ main {
     font-size: 56px;
     font-style: normal;
     font-weight: 400;
-    line-height: 64px;
-    letter-spacing: 0px;
-    text-align: left;
     margin: 0 0 15px 0;
     width: calc(100% + 240px);
+    z-index: 3;
 }
 
 #aboutCrew p {
@@ -95,5 +92,70 @@ img:not(#logo) {
     width: calc(100vw / 100vh);
     margin: 0 70px;
     place-self: end center;
+}
+
+@media (max-width:900px) {
+    body {
+        background-image: url('../../assets/crew/background-crew-tablet.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    main {
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+        height: auto;
+        padding: 0;
+    }
+
+    #firstPanel {
+        display: grid;
+        grid-template-rows: auto auto;
+        padding: 0 50px;
+        margin: 50px 0 0 50px;
+    }
+    
+    #pageTitle {
+        font-family: var(--barlow);
+        font-size: 24px;
+        font-weight: 400;  
+        margin-left: -50px; 
+        margin-bottom: 50px; 
+    }
+    
+    #firstPanel h2 span{
+        font-weight: 800;
+    }
+
+    #aboutCrew {
+        text-align: center;
+
+    }
+    
+    #aboutCrew h1 {
+        text-align: center;
+        width: 100%;
+        line-break: none;
+        font-size: 40px;
+    }
+
+    #aboutCrew h2 {
+        font-size: 24px;
+        font-family: var(--bellefair);
+        font-weight: 400;
+    }
+
+
+    #switch {
+        display: flex;
+        width: 20%;
+        justify-content: space-between;
+        margin: 50px 0;
+        justify-self: center;
+    }
+
+    #secondPanel img {
+        width: 50%;
+    }
 }
 

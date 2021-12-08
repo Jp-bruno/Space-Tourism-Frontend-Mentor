@@ -3,6 +3,7 @@
     width: 100%;
     align-items: center;
     margin-top: 40px;
+    padding: 0;
 }
 
 img {
@@ -20,12 +21,14 @@ img {
 
 #topNav {
     height: 94px;
-    width: 100%;
-    padding: 0 100px 0 60px;
     display: flex;
     align-content: center;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
+}
+
+ol {
+    padding: 0 60px 0 50px;
 }
 
 #topNavList {
@@ -56,4 +59,42 @@ img {
 
 .topNavListItem span {
     font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+    #topBar {
+        display: flex;
+        width: auto;
+        margin: 0;
+        align-items: center;
+    }
+
+    #topNav {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    ol {
+        display: flex;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+    }
+  
+    #line {
+        visibility: hidden;
+    }
+
+    .topNavListItem {
+        grid-template-columns: auto;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    .topNavListItem span {
+        display: none;
+    }
+
+
 }
