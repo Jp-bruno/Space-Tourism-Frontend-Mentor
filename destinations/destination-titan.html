@@ -21,47 +21,52 @@
                 <li class='topNavListItem'><span>00</span><a href="../index.html">HOME</a></li>
                 <li class='topNavListItem active'><span>01</span><a href="">DESTINATION</a></li>
                 <li class='topNavListItem'><span>02</span><a href="../crew/crew-commander.html">CREW</a></li>
-                <li class='topNavListItem'><span>03</span><a href="../technology/technology-vehicle.html">TECHNOLOGY</a></li>
+                <li class='topNavListItem'><span>03</span><a href="../technology/technology-vehicle.html">TECHNOLOGY</a>
+                </li>
             </ol>
         </nav>
     </header>
 
-    <main>
-        <section id='firstPanel'>
-            <h2 id='pageTitle'><span>01</span>PICK YOUR DESTINATION</h2>
-            <img id='planetPic' src='../assets/destination/image-titan.png'>
-        </section>
+    <main id='main'>
+        <h2 id='pageTitle'><span>01</span>PICK YOUR DESTINATION</h2>
 
-        <section id='secondPanel'>
-            <nav id='planetsNav'>
-                <ul id='planetsList'>
-                    <li class='planetListItem'><a href="./destination-moon.html">MOON</a></li>
-                    <li class='planetListItem'><a href="./destination-mars.html">MARS</a></li>
-                    <li class='planetListItem'><a href="./destination-europa.html">EUROPA</a></li>
-                    <li class='planetListItem active'><a href="">TITAN</a></li>
-                </ul>
-            </nav>
+        <div>
+            <section id='firstPanel'>
+                <img id='planetPic' src='../assets/destination/image-titan.png'>
+            </section>
 
-            <h1 id='planetNameHeader'>TITAN</h1>
+            <section id='secondPanel'>
+                <nav id='planetsNav'>
+                    <ul id='planetsList'>
+                        <li class='planetListItem'><a href="./destination-moon.html">MOON</a></li>
+                        <li class='planetListItem'><a href="./destination-mars.html">MARS</a></li>
+                        <li class='planetListItem'><a href="./destination-europa.html">EUROPA</a></li>
+                        <li class='planetListItem active'><a href="">TITAN</a></li>
+                    </ul>
+                </nav>
 
-            <p id='description'>
-                The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
-            </p>
+                <h1 id='planetNameHeader'>TITAN</h1>
 
-            <hr>
+                <p id='description'>
+                    The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home
+                    (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+                </p>
 
-            <table id='infoTable'>
-                <thead>
-                    <th>AVG. DISTANCE</th>
-                    <th>EST. TRAVEL TIME</th>
-                </thead>
+                <hr>
 
-                <tr>
-                    <td id='distance'>1.6 BIL. KM</td>
-                    <td id='travelTime'>7 YEARS</td>
-                </tr>
-            </table>
-        </section>
+                <table id='infoTable'>
+                    <thead>
+                        <th>AVG. DISTANCE</th>
+                        <th>EST. TRAVEL TIME</th>
+                    </thead>
+
+                    <tr>
+                        <td id='distance'>1.6 BIL. KM</td>
+                        <td id='travelTime'>7 YEARS</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
     </main>
 
 </body>

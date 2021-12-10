@@ -3,42 +3,29 @@ body {
     background-size: cover;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 50px 150px;
-    max-width: 100vw;
-}
-
 #firstPanel {
+    height: auto;
+    flex-basis: 50%;
     display: grid;
-    grid-template-rows: auto auto;
-}
-
-#pageTitle {
-    font-family: var(--barlow);
-    margin-bottom: 7vh;
-    font-size: 28px;
-    font-weight: 300;   
-    letter-spacing: 4.7px;
-}
-
-#pageTitle span{
-    padding-right: 20px;
-    color: rgba(255,255,255, 0.25);       
-    font-weight: bold;
+    place-items: center;
 }
 
 #firstPanel img {
-    width: 80%;
+    margin: 0;
+    width: 70%;
 }
 
 #secondPanel {
-    padding: 5vh 100px 0;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    width: auto;
+    align-self: flex-start;
 }
 
 #planetsNav {
-    margin: 5vh 0 5vh;
+    margin: 0 0 5vh;
 }
 
 .planetListItem {
@@ -121,17 +108,18 @@ td {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     body {
         background-image: url('../../assets/destination/background-destination-tablet.jpg');
         background-attachment: fixed;
     }
 
-    main {
-        grid-template-columns: none;
-        grid-template-rows: auto auto;
-        padding: 50px 0 0 0;
+    #main > div {
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 100vw;
     }
+
 
     #firstPanel {
         display: grid;
@@ -149,7 +137,7 @@ td {
     
     #firstPanel img {
         width: 50%;
-        margin: 80px auto 0;
+        margin: 1% auto 10%;
     }
     
     #secondPanel {
@@ -172,6 +160,7 @@ td {
     
     hr {
         width: 100%;
+        margin: 5% 0;
     }
 
     table {
@@ -182,5 +171,3 @@ td {
         text-align: center;
     }    
 }
-
-
