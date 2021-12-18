@@ -16,12 +16,11 @@ main {
 }
 
 #indexText {
-    color: #D0D6F9;
-    width: auto;
+    width: 70%;
     display: grid;
     grid-auto-rows: auto;
     row-gap: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 #indexText h5 {
@@ -30,13 +29,11 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 34px;
-    letter-spacing: 4.724999904632568px;
-    text-align: left;
-    
+    letter-spacing: 4.7px;
 }
 
 #indexText h1 {
-    font-family: Bellefair;
+    font-family: var(--bellefair);
     font-size: 150px;
     font-weight: 400;
 }
@@ -47,8 +44,7 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
-    letter-spacing: 0px;
-    text-align: left;
+    color: #ffffffb6;
 }
 
 #exploreButton {
@@ -105,6 +101,7 @@ main {
 
     #indexText {
         color: #D0D6F9;
+        width: 100%;
     }
 
     #indexText h5 {

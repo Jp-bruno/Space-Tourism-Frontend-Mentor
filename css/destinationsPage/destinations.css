@@ -25,7 +25,7 @@ body {
 }
 
 #planetsNav {
-    margin: 0 0 5vh;
+    margin: 0 0 5vh 0;
 }
 
 .planetListItem {
@@ -56,6 +56,7 @@ body {
     font-family: var(--barlow);
     display: flex;
     width: 100%;
+    padding: 0;
     list-style-type: none;
 }
 

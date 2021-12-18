@@ -21,6 +21,8 @@ body {
 #infoWrapper {
     display: flex;
     flex-direction: row;
+    width: 80%;
+    place-self: center start;
 }
 
 #infoWrapper nav {
@@ -36,7 +38,7 @@ body {
 }
 
 #textContent {
-    padding-right: 17%;
+    
 }
 
 #textContent h3 {
@@ -133,6 +135,7 @@ img:not(#logo) {
 
     #infoWrapper {
         flex-direction: column;
+        width: 100%;
         padding: 0 10%;
     }
 
@@ -168,7 +171,6 @@ img:not(#logo) {
 
     #textContent {
         text-align: center !important;
-
     }
 
     #textContent h1 {
@@ -188,12 +190,10 @@ img:not(#logo) {
         content: url('../../assets/technology/image-spaceport-landscape.jpg');
     }
 
-
     #contentImage[data-page='vehicle'] {
         content: url('../../assets/technology/image-launch-vehicle-landscape.jpg');
     }
 
- 
     #contentImage[data-page='capsule'] {
         content: url('../../assets/technology/image-space-capsule-landscape.jpg');
     }

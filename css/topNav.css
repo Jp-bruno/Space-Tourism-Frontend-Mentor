@@ -31,8 +31,8 @@
     backdrop-filter: blur(81.5485px);
 }
 
-ul {
-    padding: 0 60px 0 50px;
+#topNavList {
+    padding: 0 60px 0 0;
 }
 
 #topNavList {
