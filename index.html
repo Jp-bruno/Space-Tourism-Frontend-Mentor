@@ -18,13 +18,17 @@
 
     <div id='line'></div>
 
+
+    <input id='mobileMenuButtonInput' type='checkbox' checked='false'></input>
+
+
     <nav id='topNav'>
-      <ol id='topNavList'>
+      <ul id='topNavList'>
         <li class='topNavListItem active'><span>00</span><a href="#">HOME</a></li>
         <li class='topNavListItem'><span>01</span><a href="./destinations/destination-moon.html">DESTINATION</a></li>
         <li class='topNavListItem'><span>02</span><a href="./crew/crew-commander.html">CREW</a></li>
         <li class='topNavListItem'><span>03</span><a href="./technology/technology-vehicle.html">TECHNOLOGY</a></li>
-      </ol>
+      </ul>
     </nav>
   </header>
 
@@ -32,14 +36,24 @@
     <div id='indexText'>
       <h5>SO, YOU WANT TO TRAVEL TO</h5>
       <h1>SPACE</h1>
-      <p>Let’s face it; if you want to go to space, you might as well <br> genuinely go to outer space and not hover kind of
-        on the <br> edge of it. Well sit back, and relax because we’ll give you a <br> truly out of this world experience!</p>
+      <p>Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover
+        kind of
+        on the edge of it. Well sit back, and relax because we'll give you a truly out of this world
+        experience!</p>
     </div>
 
-    
-      <button  id='exploreButton'>EXPLORE</button>
-    
+
+    <button id='exploreButton'>EXPLORE</button>
+
   </main>
+
+  <script>
+    let a = document.getElementById('mobileMenuButtonInput').addEventListener('click', meh)
+    function meh(ev) {
+      return console.log(ev.target.checked)
+    }
+    
+  </script>
 </body>
 
 </html>

@@ -58,6 +58,12 @@ ul {
     font-weight: bold;
 }
 
+@media (min-width: 700px) {
+    #mobileMenuButtonInput {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
     #pageTitle {
         font-size: 20px;
@@ -70,4 +76,8 @@ ul {
     #main > div {
         flex-direction: column;
     }
+}
+
+@media (max-width: 700px) {
+
 }

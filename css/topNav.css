@@ -1,3 +1,7 @@
+:root {
+    --background-image: url('../assets/x.png');
+}
+
 #topBar {
     display: flex;
     width: 100%;
@@ -6,7 +10,7 @@
     padding: 0;
 }
 
-img {
+#logo {
     margin: 0 55px;
 }
 
@@ -27,7 +31,7 @@ img {
     backdrop-filter: blur(81.5485px);
 }
 
-ol {
+ul {
     padding: 0 60px 0 50px;
 }
 
@@ -62,7 +66,7 @@ ol {
 }
 
 @media (max-width: 1000px) {
-    #topBar {
+    #topBar{
         display: flex;
         width: auto;
         margin: 0;
@@ -74,7 +78,7 @@ ol {
         max-width: 100%;
     }
 
-    ol {
+    ul {
         display: flex;
         padding: 0 10px 0 10px;
         box-sizing: border-box;
@@ -97,4 +101,85 @@ ol {
     }
 
 
+}
+
+
+@media (max-width: 700px) {
+    #line {
+        display: none;
+    }
+
+    #topBar {
+        padding: 5% 0;
+        justify-content: space-between;
+    }
+
+    #logo {
+        margin: 0 7%;
+    }
+    
+    #mobileMenuButtonInput {
+        width: 20px;
+        height: 20px;
+        z-index: 3;
+        margin: 7% 10% 7% 0;
+        visibility: hidden;
+    }
+
+    #mobileMenuButtonInput::after {
+        visibility: visible;
+        background-image: var(--background-image);
+        content: '';
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: inherit;
+        height: inherit;
+    }  
+
+    #mobileMenuButtonInput:checked {
+        --background-image: url('../assets/hamb.png')
+    }     
+    
+    #mobileMenuButtonInput:checked + #topNav {
+        transform: translateX(100%);
+    }
+
+    #topNav {
+        width: 75%;
+        height: 100vh;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        transition: transform 0.5s ease;
+    }
+
+    
+    ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 50% 0 0 15%;
+    }
+
+    .topNavListItem {
+        display: flex;
+        margin: 10% 0;
+    }
+
+    .topNavListItem a {
+        font-size: 21px;
+    }
+
+    .topNavListItem.active {
+        border: inherit;
+    }
+
+    .topNavListItem span {
+        font-size: 21px;
+        display: block;
+        margin-right: 10px;
+    }
 }
