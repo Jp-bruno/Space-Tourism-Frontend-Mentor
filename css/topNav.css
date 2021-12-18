@@ -1,5 +1,5 @@
 :root {
-    --background-image: url('../assets/x.png');
+    --background-image: url('../assets/hamb.png');
 }
 
 #topBar {
@@ -99,8 +99,6 @@
     .topNavListItem span {
         display: none;
     }
-
-
 }
 
 
@@ -138,13 +136,9 @@
     }  
 
     #mobileMenuButtonInput:checked {
-        --background-image: url('../assets/hamb.png')
+        --background-image: url('../assets/x.png')
     }     
     
-    #mobileMenuButtonInput:checked + #topNav {
-        transform: translateX(100%);
-    }
-
     #topNav {
         width: 75%;
         height: 100vh;
@@ -152,11 +146,15 @@
         padding: 0;
         margin: 0;
         right: 0;
+        left: 100%;
         bottom: 0;
         z-index: 2;
         transition: transform 0.5s ease;
     }
-
+    
+    #mobileMenuButtonInput:checked + #topNav {
+        transform: translateX(-100%);
+    }
     
     ul {
         flex-direction: column;

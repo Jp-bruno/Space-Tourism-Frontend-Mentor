@@ -84,11 +84,18 @@ hr {
     border: none;
 }
 
-table {
+#infoTable {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-th {
+#infoTable div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.tableTitle {
     font-family: var(--barlow);
     font-size: 14px;
     font-weight: 100;
@@ -97,16 +104,11 @@ th {
     padding-bottom: 10px;
 }
 
-tr {
-    border: solid 10px white;
-}
-
-td {
+.tableData {
     font-family: var(--bellefair);
     font-size: 28px;
     font-weight: 400;
     text-align: left;
-
 }
 
 @media (max-width: 1024px) {
@@ -164,11 +166,72 @@ td {
         margin: 5% 0;
     }
 
-    table {
+    #infoTable {
         margin-bottom: 100px;
     }
     
     th, td {
         text-align: center;
     }    
+}
+
+@media (max-width: 500px) {
+    #main {
+        padding: 0;
+    }
+
+    #pageTitle {
+        font-size: 13px;
+        text-align: center;
+        margin: 10px 0 30px;
+    }
+
+    #planetsList {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    #planetsList li a {
+        font-size: 9px;
+    }
+
+    #secondPanel {
+        margin: 0;
+        padding: 0;
+    }
+
+    #secondPanel h1 {
+        font-size: 66px;
+    }
+
+    #secondPanel p {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.5);
+        padding: 0 10px;
+    }
+
+    hr {
+        width: 90%;
+    }
+    
+    #infoTable {
+        grid-template-columns: 0;
+        grid-template-rows: auto auto;
+        width: 100%;
+    }
+
+    #infoTable div:first-of-type {
+        margin: 30px 0;
+    }
+
+    #infoTable span {
+        display: block;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .tableTitle {
+        padding: 0;
+        font-size: 14px;
+    }
 }
