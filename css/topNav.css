@@ -27,7 +27,8 @@
     height: 94px;
     display: flex;
     align-content: center;
-    backdrop-filter: blur(81.5485px);
+    backdrop-filter: blur(81px);
+    -webkit-backdrop-filter: blur(81px);    
 }
 
 #topNavList {
