@@ -6,13 +6,10 @@ body {
 
 #main {
     padding-bottom: 0;
-}
-
-
-#main {
     display: flex; 
     flex-direction: column;
 }
+
 #firstPanel, #secondPanel {
     flex-basis: 50%;
 }
@@ -38,7 +35,6 @@ body {
     font-weight: 400;
     margin: 0 0 15px 0;
     width: auto;
-    z-index: 3;
 }
 
 #aboutCrew p {
@@ -85,6 +81,8 @@ img:not(#logo) {
     margin: 0;
 }
 
+/* ----------- tablet ------------*/
+
 @media (max-width: 1024px) {
     body {
         background-image: url('../../assets/crew/background-crew-tablet.jpg');
@@ -129,6 +127,65 @@ img:not(#logo) {
 
     img:not(#logo) {
         transform: translateY(0);
+    }
+}
+
+/* ----------- mobile ------------*/
+
+@media (max-width: 700px) {
+    #main {
+        padding: 0;
+    }
+
+    #pageTitle {
+        font-size: 13px;
+        text-align: center;
+        margin: 10px 0 30px;
+    }
+
+    #main > div {
+        flex-direction: column-reverse;
+    }
+
+    #firstPanel {
+        padding: 0;
+        margin: 0 50px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #aboutCrew h2 {
+        font-size: 16px;
+    }
+
+    #aboutCrew h1 {
+        font-size: 20px;
+    }
+
+    #aboutCrew p {
+        font-size: 15px;    
+    }
+
+    #switch {
+        width: 50%;
+        align-self: center;
+    }
+
+    img:not(#logo) {
+        width: 50%;
+    }
+
+    #secondPanel::after {
+        position: relative;
+        content: '';
+        width: 80%;
+        bottom: 0;
+        height: 0.7px;
+        background: rgba(255,255,255, 0.25);
+    }
+
+    #firstPanel {
+        margin-bottom: 100px;
     }
 }
 

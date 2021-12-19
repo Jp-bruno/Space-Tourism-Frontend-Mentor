@@ -15,11 +15,11 @@
 }
 
 #line {
-    width: 900px;
+    width: 100%;
     height: 0.5px;
     border-bottom: solid 1px rgba(255, 255, 255, 0.308);
     transform: translateX(30px);
-    margin-left: -25px;
+    margin: 0 0 0 -25px;
     z-index: 2;
 }
 
@@ -27,12 +27,13 @@
     height: 94px;
     display: flex;
     align-content: center;
-    backdrop-filter: blur(81px);
-    -webkit-backdrop-filter: blur(81px);    
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(181px);
+    -webkit-backdrop-filter: blur(181px);    
 }
 
 #topNavList {
-    padding: 0 60px 0 0;
+    padding: 0 60px;
 }
 
 #topNavList {
@@ -101,7 +102,6 @@
     }
 }
 
-
 @media (max-width: 700px) {
     #line {
         display: none;
@@ -118,6 +118,10 @@
         bottom: 0;
         z-index: 2;
         transition: transform 0.5s ease;
+    }
+
+    #topNavList {
+        padding: 0;
     }
 
     #topBar {
