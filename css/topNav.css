@@ -156,8 +156,6 @@
         --background-image: url('../assets/x.png')
     }     
     
-
-    
     #mobileMenuButtonInput:checked + #topNav {
         transform: translateX(-100%);
     }
