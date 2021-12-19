@@ -133,16 +133,6 @@ img:not(#logo) {
 /* ----------- mobile ------------*/
 
 @media (max-width: 700px) {
-    #main {
-        padding: 0;
-    }
-
-    #pageTitle {
-        font-size: 13px;
-        text-align: center;
-        margin: 10px 0 30px;
-    }
-
     #main > div {
         flex-direction: column-reverse;
     }
