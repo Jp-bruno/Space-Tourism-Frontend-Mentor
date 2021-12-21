@@ -1,7 +1,3 @@
-:root {
-    --background-image: url('../assets/hamb.png');
-}
-
 #topBar {
     display: flex;
     width: 100%;
@@ -20,7 +16,7 @@
     border-bottom: solid 1px rgba(255, 255, 255, 0.308);
     transform: translateX(30px);
     margin: 0 0 0 -25px;
-    z-index: 2;
+    z-index: 4;
 }
 
 #topNav {
@@ -142,12 +138,11 @@
         height: 1px;
         z-index: 3;
         margin: 3% 15% 10% 0;
-        background: red;
     }
 
     #mobileMenuButtonInput::after {
         visibility: visible;
-        background-image: var(--background-image);
+        background-image: url('../assets/hamb.png');
         content: '';
         background-repeat: no-repeat;
         background-size: contain;
@@ -156,8 +151,8 @@
         height: 25px;
     }  
 
-    #mobileMenuButtonInput:checked {
-        --background-image: url('../assets/x.png')
+    #mobileMenuButtonInput:checked::after {
+        background-image: url('../assets/x.png');
     }     
     
     #mobileMenuButtonInput:checked + #topNav {
