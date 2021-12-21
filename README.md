@@ -1,10 +1,10 @@
 ## Welcome
 
-This project was a [FrontEnd Mentor challenge](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). I could do it in ReactJS, it would be easier, but I needed to prove to myself that I could do it with just HTML and CSS to challenge my skills. 
+This project is a [FrontEnd Mentor Challenge](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Made with just HTML and CSS as a end to challenge my skills. 
 
 ## Built with
 
-- HTML and CSS, no JS was used in this project
+- HTML and CSS, no JS was used in this project.
 
 ## Pages
  - Home
@@ -31,9 +31,7 @@ This project was a [FrontEnd Mentor challenge](https://www.frontendmentor.io/cha
 
 ## Updates
 
-  The mobile version is under development.
-
-The code in this repo results in this page and the others mentioned above:
+  Mobile and tablet versions done.
 
 ![alt text](https://github.com/Jp-bruno/Space-Tourism-Frontend-Mentor/blob/f1e86494df1bd22db65b8148b67ce5f373f70242/snap.PNG)
 
