@@ -1,6 +1,5 @@
 body {
     width: 100vw;
-    height: calc(100vh - 40px);
     background-image: url('../../assets/home/background-home-desktop.jpg');
     background-size: cover ;
     background-attachment: fixed;
@@ -12,7 +11,7 @@ main {
     place-items: center;
     color: white;
     max-width: 100vw;
-    min-height: calc(100% - 40px);
+    height: 100vh;
 }
 
 #indexText {
@@ -20,7 +19,7 @@ main {
     display: grid;
     grid-auto-rows: auto;
     row-gap: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 #indexText h5 {
